@@ -1,42 +1,36 @@
-# Mountain Name Recognition with Neural Networks
+# NER for mountains
 
-## Overview
+## Project Overview
 
-This project focuses on recognizing mountain names in text using Named Entity Recognition (NER) techniques and neural networks. The goal is to extract mountain names from unstructured text data.
+This repository focuses on using Named Entity Recognition (NER) techniques with neural networks to identify mountain names within text. By training models on annotated datasets, the goal is to accurately detect and extract mountain names from unstructured data.
 
-## Data Collection
+## Data Preparation
 
-1. Data was collected by web scraping websites containing information about mountains.
-2. The collected text data was preprocessed to extract and annotate mountain names.
+1. **Data Source**: Text data was gathered through web scraping from various mountain-related websites.
+2. **Preprocessing**: The raw text was cleaned and manually annotated to highlight mountain names, forming the dataset used for training.
 
-## Model Training
+## Model Development
 
-1. The BERT (Bidirectional Encoder Representations from Transformers) model was used for token classification.
-2. The dataset was tokenized, and labels were aligned with tokens.
-3. The model was fine-tuned on the annotated dataset.
+1. **Model Architecture**: The BERT (Bidirectional Encoder Representations from Transformers) architecture was utilized for token classification to identify mountain names.
+2. **Tokenization**: The dataset was tokenized, with labels aligned to each token for effective training.
+3. **Fine-Tuning**: BERT was fine-tuned on the annotated dataset to improve recognition accuracy.
 
-## Model Inference
+## Model Evaluation & Inference
 
-1. A trained model was used for inference.
-2. The model predicted mountain names in input text.
+1. **Evaluation**: After training, the model was tested on unseen text to evaluate its performance in identifying mountain names.
+2. **Inference**: The trained model can be used to predict mountain names in any input text.
 
-## Improvements
+## Future Enhancements
 
-1. To improve accuracy, diversify the dataset with more mountain-related sentences.
-2. Experiment with different NER models and hyperparameters.
-3. Explore techniques for handling variations in mountain name formats.
+1. **Dataset Expansion**: Collect additional data from more diverse mountain-related sources to further refine the model.
+2. **Model Optimization**: Test different NER models and fine-tune hyperparameters to improve performance.
+3. **Name Variations**: Implement techniques to handle different name formats, including abbreviations and alternative spellings.
 
-## Usage
+## How to Use
 
-To perform inference with the trained model, use the provided Python script.
+To run the model for training or inference, use the following scripts:
 
 ```bash
 python model_training.py
 python model_inference.py
 ```
-
-## Conclusion
-
-This project demonstrates the process of recognizing mountain names in text using NER and neural networks. Further improvements can enhance the accuracy and robustness of the model.
-
-Please refer to the documentation for detailed usage instructions.
